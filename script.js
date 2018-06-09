@@ -1,3 +1,7 @@
+$(window).on('load',function(){
+   $('.wrapper').removeClass('hidden');
+   $('.preloader').addClass('hidden');
+});
 $(document).ready(function(){
    
    var $firstP = $(".text-two p");
