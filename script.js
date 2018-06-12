@@ -11,7 +11,6 @@ $(document).ready(function(){
 
    $(window).on("scroll", () =>{
    		var $win = $(window).scrollTop()/2; 
-   		console.log($win);
    		$firstP.css('transform', 'translateX('+$win+'px)');
    		$secondP.css('transform', 'translateX('+$win*(-1)+'px)'); 
    		$thirdP.css('transform', 'translateY('+$win*(-1)+'px)');
