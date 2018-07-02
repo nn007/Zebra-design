@@ -16,4 +16,11 @@ $(document).ready(function(){
    		$thirdP.css('transform', 'translateY('+$win*(-1)+'px)');
    		$fiveP.css('transform', 'translateY('+$win*(-1)+'px)');
    });
+   
+   $('.first-content').on('mouseover',function(){
+      $('.first-section').css('filter','invert(100%)');  
+   });
+   $('.first-content').on('mouseleave',function(){
+      $('.first-section').css('filter','invert(0)');  
+   });
 });
