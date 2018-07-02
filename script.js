@@ -18,9 +18,15 @@ $(document).ready(function(){
    });
    
    $('.first-content').on('mouseover',function(){
-      $('.first-section').css('filter','invert(100%)');  
+      $('.first-section').css({
+         'filter':'invert(100%)',
+         '-webkit-filter':'invert(100%)'
+      });  
    });
    $('.first-content').on('mouseleave',function(){
-      $('.first-section').css('filter','invert(0)');  
+      $('.first-section').css({
+         'filter':'invert(0)',
+         '-webkit-filter':'invert(0)'
+      });  
    });
 });
